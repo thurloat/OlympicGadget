@@ -1,0 +1,69 @@
+body
+{
+    margin: 0;
+		width: 255px;
+		height: 350px;
+    font-family: Segoe UI, Arial;
+    font-weight: bold;
+}
+td {
+	font-size: 12px;
+	text-align: center;
+	width: 16px;
+	padding: 2px;
+}
+#loading {
+	position: relative;
+	top: 100px;
+	left: 90px;
+}
+#content {
+	position: absolute;
+	left: 15px;
+	top: 39px;
+	width: 240px;
+	height: 300px;
+}
+#appby{
+	position: absolute;
+	height: 25px;
+	width: 150px;
+	bottom:0px;
+	right: -60px;
+	font-size: 75%;
+	color:#666;
+}
+#appby img{
+	margin-bottom:-2px;
+	border:none;
+}
+#medals {
+	width:98%;	
+height: 276px;
+	overflow-y: scroll;
+}
+
+#content table .total,
+#content table .name {
+	font-weight: bold;
+}
+
+#content table .name {
+	text-align: left;
+	width: 128px;
+}
+.medalRow td{
+	border-bottom: 1px solid #CCC;
+	padding: 8px 2px 3px 2px;
+}
+.hovered{
+	background-color: #DDD;
+}
+.medalRow img, .mycountry img{
+	margin-right: 5px;
+
+}
+#content table .mycountry td {
+	background-color: #CCC;
+	border-bottom: 2px solid #888;
+}

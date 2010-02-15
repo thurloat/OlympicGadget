@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>Olympic Medal Count</name>
+  <version>2.1</version>
+  <author name="Norex">
+    <info url="http://www.norex.ca/" />
+  </author>
+  <copyright>&#169; Norex</copyright>
+  <description>Keep up-to-date with the medal count.</description>
+  <icons>
+
+    <icon width="48" height="48" src="Icon.png" />
+
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="OlympicMedalCount.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+    </host>
+  </hosts>
+</gadget>
