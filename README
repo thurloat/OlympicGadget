@@ -1,7 +1,6 @@
 Notes:
-    - to compile new version, zip contents of gadget directory and rename the zip file with extension .gadget
+    - to compile new version, zip contents of gadget directory and rename the zip file to OlympicMedalsGadget.gadget (so user is prompted to update rather than install a second version).
     - when updating, increase the version number in both the JAVA source code and the gadget.xml file
     - that is all.
-    
     
 - Adam
