@@ -1,3 +1,5 @@
+var repeater = 0;
+
 function init() {
 	
 	
@@ -37,7 +39,10 @@ function updateMedalsTable() {
 
 		medals.innerHTML = '<table cellspacing="0" id="results">' + table + '</tbody></table>';
 	});
-	setTimeout("updateMedalsTable()", 45000);
+	if (repeater < 1) {
+		setTimeout("updateMedalsTable()", 120000);
+		repeater = 1;
+	}
 }
 
 function medalTableRow(country, is_mycountry) {
@@ -58,7 +63,7 @@ function fetchMedalsData(onSuccess) {
 		}
 	}
 
-	xhttp.open("GET","http://norexmedals.appspot.com/api/json?"+Math.floor(Math.random()*104),false);
+	xhttp.open("GET","http://norexmedals.appspot.com/api/json?"+Math.floor(Math.random()*14*Math.random())+Math.floor(Math.random()*12),false);
 	xhttp.send("");
 }
 function checkVersion(){
@@ -74,6 +79,6 @@ function checkVersion(){
 			}
 		}
 	}
-	xhttp.open("GET","http://norexmedals.appspot.com/api/version?"+Math.floor(Math.random()*104),false);
+	xhttp.open("GET","http://norexmedals.appspot.com/api/version?"+Math.floor(Math.random()*14*Math.random())+Math.floor(Math.random()*12),false);
 	xhttp.send("");
 }
