@@ -10,7 +10,7 @@ function createCountryDropDown() {
 
 		countries.sort();
 		
-		for (i = 0; i < countries.length - 1; i++) {
+		for (i = 0; i < countries.length; i++) {
 			var country = countries[i];
 			var objEntry = document.createElement("option");
 			objEntry.text = country;
