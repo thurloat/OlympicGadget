@@ -1,22 +1,16 @@
-function load()
-{
-		System.Gadget.onSettingsClosing = settingsClosing;
-		createCountryDropDown();
-}
-
 function createCountryDropDown() {
 	fetchMedalsData(function(data) {
 		var selected = System.Gadget.Settings.read("country");
 
-		var countries = new Array();
+		var countries = [];
 		for (var i = 0; i < data.length - 1; i++) {
-			if (!data[i]) break;
+			if (!data[i]) {break;}
 			countries.push(data[i].name);
 		}
 
 		countries.sort();
 		
-		for (var i = 0; i < countries.length; i++) {
+		for (i = 0; i < countries.length - 1; i++) {
 			var country = countries[i];
 			var objEntry = document.createElement("option");
 			objEntry.text = country;
@@ -41,4 +35,10 @@ function settingsClosing(event)
 	{
 	}
 	event.cancel = false;
+}
+
+function load()
+{
+		System.Gadget.onSettingsClosing = settingsClosing;
+		createCountryDropDown();
 }
